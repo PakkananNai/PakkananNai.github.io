@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(93, 207, 93);
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+.box {
+    background-color: rgb(122, 255, 117);
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;  /* ให้กว้าง 90% ของหน้าจอ */
+    max-width: 600px; /* ความกว้างสูงสุดในมือถือหรือหน้าจอเล็ก */
+    box-shadow: 10px 10px 20px 0 rgba(18, 94, 15, 0.5);
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(0, 156, 0);
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#cat {
+    animation: shake 1s ease-in-out 1s infinite alternate;
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(15deg);
+    }
+    to {
+        transform: rotate(-15deg);
+        transform-origin: center center;
+    }
+}
+
+button {
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    box-shadow: 5px 5px 0 0 rgb(96, 199, 93);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: padding 0.3s ease; /* เพิ่ม transition */
+}
+
+.btn1, .btn3 {
+    background-color: rgb(183, 255, 176);
+    border-color: rgb(97, 243, 84);
+    color: rgb(3, 128, 20);
+    margin-bottom: 50px;
+}
+
+.btn2, .btn4{
+    background-color: rgb(255, 186, 186);
+    border-color: rgb(255, 142, 142);
+    color: rgb(136, 0, 0);
+    margin-bottom: 15px;
+}
+
+#kiss {
+    font-size: 50px;
+}
+
+.cat_kiss {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 70%; /* กำหนดความกว้างของภาพเป็น 70% ของ .box */
+    max-width: 300px; /* จำกัดความกว้างสูงสุดของภาพ */
+}
+
+/* ปรับขนาดสำหรับหน้าจอมือถือ */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .box {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    img.icon {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        max-width: 800px;  /* สำหรับแท็บเล็ต */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .box {
+        max-width: 1000px;  /* สำหรับหน้าจอพีซี */
+    }
+}
