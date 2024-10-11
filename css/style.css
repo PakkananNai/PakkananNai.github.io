@@ -8,12 +8,12 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: rgb(93, 207, 93);
+    background-color: #6EDE75;
     font-family: "IBM Plex Sans Thai", sans-serif;
 }
 
 .box {
-    background-color: rgb(122, 255, 117);
+    background-color: #91FF99;
     border-radius: 20px;
     padding: 20px;
     width: 90%;  /* ให้กว้าง 90% ของหน้าจอ */
